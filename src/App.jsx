@@ -9,20 +9,17 @@ import Contact from './components/Contact';
 import Education from './components/Education';
 import Experience from './components/Experience';
 import Footer from './components/Footer';
+
 import 'animate.css';
 import './App.css';
-import { FaAngleUp } from 'react-icons/fa'; 
 
+import { FaAngleUp } from 'react-icons/fa';
 
 const App = () => {
   const [showScroll, setShowScroll] = useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY > 300) {
-      setShowScroll(true);
-    } else {
-      setShowScroll(false);
-    }
+    setShowScroll(window.scrollY > 300);
   };
 
   const scrollToTop = () => {
@@ -47,7 +44,10 @@ const App = () => {
       <Contact />
       <Footer />
 
-      <div className={`scroll-up-btn ${showScroll ? 'show' : ''}`} onClick={scrollToTop}>
+      <div
+        className={`scroll-up-btn ${showScroll ? 'show' : ''}`}
+        onClick={scrollToTop}
+      >
         <FaAngleUp size={24} />
       </div>
     </div>
