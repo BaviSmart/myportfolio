@@ -48,7 +48,7 @@ const About = () => {
               <span>Senior Full Stack Developer</span>
             </h5>
             <p>
-              Full-stack web developer with over 2 years of experience, specializing in MERN (MongoDB, Express.js, React.js, Node.js) and CodeIgniter. Developed interactive, user-friendly websites,improving user engagement by 30%. Translated client requirements into scalable, maintainable applications, increasing development efficiency by 25%. Proficient in secure authorization, real-time analytics, and optimizing workflows, boosting productivity by 35%.
+              Senior Full Stack Developer with 3+ years of IT experience and 6 years of total professional experience, including Mechanical Engineering. Skilled in building high-performance web applications using Laravel, CodeIgniter, MERN stack (MongoDB, Express.js, React.js, Node.js), Java, and AWS. Experienced in cloud solutions, real-time data processing, performance optimization, RESTful APIs, CI/CD, microservices, and Agile development. Proficient in designing scalable, user-focused solutions from concept to deployment.
             </p>
             <a href={resume} download>
               Download Resume

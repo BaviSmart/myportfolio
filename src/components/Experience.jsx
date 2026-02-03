@@ -40,10 +40,22 @@ const Experience = () => {
             <FaBriefcase size={30} />
           </div>
           <div className="card text pl-3">
+            <h2>Senior Full Stack Developer</h2>
+            <span className="position">Bluebase Software Service Pvt. Ltd</span>
+            <p className="location">Chennai - Tamilnadu</p>
+            <p className="date">Mar 2025 - Present</p>
+          </div>
+        </div>
+
+        <div className="resume-wrap d-flex">
+          <div className="icon-card d-flex align-items-center justify-content-center">
+            <FaBriefcase size={30} />
+          </div>
+          <div className="card text pl-3">
             <h2>Full Stack Developer</h2>
             <span className="position">Raspberry Infosystems Private Limited</span>
             <p className="location">Chennai - Tamilnadu</p>
-            <p className="date">Jan 2023 - Present</p>
+            <p className="date">Jan 2023 - Feb 2025</p>
           </div>
         </div>
 
@@ -55,7 +67,7 @@ const Experience = () => {
             <h2>Web Devlopment Course</h2>
             <span className="position">CADD Centre</span>
             <p className="location">Chennai - Tamilnadu</p>
-            <p className="date">July 2022 - Dec 2022</p>
+            <p className="date">July 2022 - Jan 2023</p>
           </div>
         </div>
         <div className="resume-wrap d-flex">
@@ -65,8 +77,19 @@ const Experience = () => {
           <div className="card text pl-3">
             <h2>Production Engineer</h2>
             <span className="position">Sundaram Fasteners Limited</span>
-            <p className="location">Chennai - Tamilnadu</p>
+            <p className="location">Gummidipoondi - Tamilnadu</p>
             <p className="date">Nov 2018 - Oct 2021</p>
+          </div>
+        </div>
+        <div className="resume-wrap d-flex">
+          <div className="icon-card d-flex align-items-center justify-content-center">
+            <FaBriefcase size={30} />
+          </div>
+          <div className="card text pl-3">
+            <h2>Production Engineer Trainee</h2>
+            <span className="position">Gestamp Automotive Chennai Pvt Ltd</span>
+            <p className="location">Sriperumbudur - Tamilnadu</p>
+            <p className="date">Oct 2017 - April 2018</p>
           </div>
         </div>
       </div>

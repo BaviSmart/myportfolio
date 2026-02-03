@@ -1,46 +1,59 @@
 import React, { useEffect, useRef } from "react";
+// https://boxicons.com/icons/nodejs?free=true&q=node&p=brands
+import javascriptImg from "../assets/images/skills/javascript.svg";
+import nodeImg from "../assets/images/skills/nodejs.svg";
+import reactImg from "../assets/images/skills/react.svg";
+import htmlImg from "../assets/images/skills/html5.svg";
+import cssImg from "../assets/images/skills/css3.svg";
+import bootstrapImg from "../assets/images/skills/bootstrap.svg";
+import jqueryImg from "../assets/images/skills/jquery.svg";
+import typescriptImg from "../assets/images/skills/typescript.svg";
 
-import javascriptImg from "../assets/images/skills/javascript.png";
-import nodeImg from "../assets/images/skills/node.png";
-import reactImg from "../assets/images/skills/react.png";
-import htmlImg from "../assets/images/skills/html.png";
-import cssImg from "../assets/images/skills/css.png";
-import bootstrapImg from "../assets/images/skills/bootstrap.png";
-import typescriptImg from "../assets/images/skills/typescript.png";
-
-import mongoImg from "../assets/images/skills/mongo.png";
+import mongoImg from "../assets/images/skills/mongodb.svg";
 import firebaseImg from "../assets/images/skills/firebase.png";
-import expressImg from "../assets/images/skills/express4.png";
-import phpImg from "../assets/images/skills/php.png";
+import expressImg from "../assets/images/skills/express-js.svg";
+import phpImg from "../assets/images/skills/php.svg";
+import laravelImg from "../assets/images/skills/laravel.svg";
 import codeigniterImg from "../assets/images/skills/codeigniter.png";
-import graphqlImg from "../assets/images/skills/graphql.png";
-import awsImg from "../assets/images/skills/aws.png";
+import graphqlImg from "../assets/images/skills/graphql.svg";
+import awsImg from "../assets/images/skills/aws.svg";
 
-import gitImg from "../assets/images/skills/git2.png";
-import gihubImg from "../assets/images/skills/github.png";
+import mysqlImg from "../assets/images/skills/my-sql.svg";
+import postgresqlImg from "../assets/images/skills/postgresql.svg";
+
+import gitImg from "../assets/images/skills/git.svg";
+import gihubImg from "../assets/images/skills/github.svg";
+import dockerImg from "../assets/images/skills/docker.svg";
 
 const skills = {
   Frontend: [
-    { src: javascriptImg, title: "JavaScript" },
-    { src: reactImg, title: "React" },
-    { src: htmlImg, title: "HTML" },
-    { src: cssImg, title: "CSS" },
-    { src: bootstrapImg, title: "Bootstrap" },
-    { src: typescriptImg, title: "Typescript" },
+    { src: javascriptImg, title: "JavaScript", bgColor: '#111'},
+    { src: reactImg, title: "React JS", bgColor: '#111'},
+    { src: htmlImg, title: "HTML5", bgColor: '#fff'},
+    { src: cssImg, title: "CSS3", bgColor: '#fff'},
+    { src: bootstrapImg, title: "Bootstrap", bgColor: '#fff'},
+    { src: jqueryImg, title: "jQuery", bgColor: '#fff'},
+    { src: typescriptImg, title: "Typescript", bgColor: '#fff'},
   ],
   Backend: [
-    { src: nodeImg, title: "NodeJS" },
-    { src: expressImg, title: "Express" },
-    { src: codeigniterImg, title: "CodeIgniter" },
-    { src: phpImg, title: "Php" },
-    { src: graphqlImg, title: "Graphql" },
+    { src: laravelImg, title: "Laravel", bgColor: '#fff'},
+    { src: nodeImg, title: "Node JS", bgColor: '#fff'},
+    { src: expressImg, title: "Express JS", bgColor: '#fff'},
+    { src: codeigniterImg, title: "CodeIgniter", bgColor: '#fff'},
+    { src: phpImg, title: "Php", bgColor: '#777bb3'},
+    { src: graphqlImg, title: "Graphql", bgColor: '#fff'},
+  ],
+  Database: [
+    { src: mysqlImg, title: "MySQL", bgColor: '#fff'},
+    { src: postgresqlImg, title: "PostgreSQL", bgColor: '#fff'},
+    { src: mongoImg, title: "Mongo DB", bgColor: 'rgb(35 44 35)'},
+    { src: firebaseImg, title: "Firebase", bgColor: '#fff'},
   ],
   Tools: [
-    { src: awsImg, title: "AWS" },
-    { src: mongoImg, title: "Mongo DB" },
-    { src: firebaseImg, title: "Firebase" },
-    { src: gitImg, title: "Git" },
-    { src: gihubImg, title: "GitHub" },
+    { src: gitImg, title: "Git", bgColor: '#fff'},
+    { src: gihubImg, title: "GitHub", bgColor: '#fff'},
+    { src: awsImg, title: "AWS", bgColor: '#053742'},
+    { src: dockerImg, title: "Docker", bgColor: '#fff'},
   ],
 };
 
@@ -83,12 +96,14 @@ const SkillsPage = () => {
             <div className="skills-list">
               {skillsList.map((skill, index) => (
                 <div className="skill-item" key={index}>
-                  <img
-                    src={skill.src}
-                    alt={skill.title}
-                    title={skill.title}
-                    style={{ width: "50px", height: "50px" }}
-                  />
+                  <div className="skill-icon-wrapper" style={{ backgroundColor: skill.bgColor }}>
+                    <img
+                      src={skill.src}
+                      alt={skill.title}
+                      title={skill.title}
+                      className="skill-icon"
+                    />
+                  </div>
                   <p>{skill.title}</p>
                 </div>
               ))}
